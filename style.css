@@ -596,3 +596,277 @@ section.book img {
   text-align: center;
   margin-left: 5rem;
 }
+footer {
+  background: #343434;
+  color: #ffffff;
+}
+.footer-contain {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+}
+.related-services {
+  display: flex;
+  align-items: center;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 2rem;
+}
+.related-services h2 {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+.vl {
+  border-left: 2px solid rgb(255, 255, 255);
+  height: 30px;
+}
+.footer-list li {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-align: left;
+}
+.footer-bar-ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  font-family: Mulish;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.08em;
+}
+.footer-bar-ul li {
+  margin: 2rem 1.5rem;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.contact-info h2 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+  color: #2aeaee;
+}
+.contact-info p {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+}
+
+/* RespnsiveNess  */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* #main-nav {
+  } */
+  .navimg {
+    display: none;
+  }
+  .container{
+    width: 90vw;
+      padding: 0;
+      margin: auto;
+  }
+  .navleft{
+    margin-left: 0%;
+  }
+  .navright{
+    display: none;
+  }
+  .navaddress{
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .hero{
+    display: block;
+  }
+  .hleftimg{
+    display: none;
+  }
+  .search-box {
+    width: 495px;
+    position: relative;
+    bottom: 274px;
+    left: -233px;
+    right: 48px;
+  }
+  
+  .search-input {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    padding: 7px 22px 7px 7px;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 3px;
+    border: none;
+    transition: all 0.4s;
+  }
+  
+  .search-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 12px #b8c6db;
+    -moz-box-shadow: 0 1px 12px #b8c6db;
+    -webkit-box-shadow: 0 1px 12px #b8c6db;
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 6px 9px;
+    margin-left: -45px;
+    border: none;
+    color: #6c6c6c;
+    transition: all 0.4s;
+    z-index: 10;
+  }
+  .example{
+    display: none;
+  }
+  .search-btn:focus {
+    outline: none;
+    color: black;
+  }
+  .herolefttitle{
+    display: none;
+  }
+  .heroright{
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .herorighttitle{
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+  .herorightimgs{
+    margin: 0;
+    padding: 0;
+  }
+  .gpimg{
+    width: 30px;
+    height: 30px;
+    margin: 0 2rem;
+  }
+  .gpcontent{
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .banner{
+    width: 85vw;
+    height: 28vh ;
+  }
+  section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .card{
+    width: 122px;
+    padding: 1rem 0.2rem;
+  }
+  .card img{
+    width: 85px;
+    top: -1.5em;
+  }
+  .card h2{
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .services-heading{
+    font-size: 20px;
+    margin-top: 1.5rem;
+    line-height: 20px;
+  }
+  .sub-heading{
+    font-size: 10px;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+  .same-card{
+    height: 115px;
+    width: 150px;
+  }
+  .sameday-img{
+    width: 105px;
+    height: 95px;
+    top: -2rem;
+  }
+  .same-text{
+    font-size: 12px;
+    padding-top: 3rem;
+    line-height: 10px;
+  }
+  .s{
+    width: 115px;
+    height: 110px;
+    top: -2.5rem;
+  }
+  .assure-card{
+    width: 100%;
+    display: -webkit-inline-box;
+  }
+  .assure-title{
+    font-size: 18px;
+  }
+  .li-1{
+    margin: 0 1.2rem;
+  }
+  .li-1 li{
+    padding: 0.5rem 0.5rem 0;
+  }
+  .listss{
+    font-size: 12px;
+  }
+  .assure-card img{
+    width: 150px;
+    height: 100%;
+    transform: translateX(-52px);
+    margin-top: 2rem;
+  }
+  .pcs-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 0 1rem;
+
+  }
+  .pcscard1{
+    width: 150px;
+    height: 100px;
+  }
+  .pcstitle{
+    font-size: 10px;
+    margin-top: 0.5rem;
+  }
+  .pcssub {
+    margin-top: 3px;
+    font-size: 8px;
+    color: #757575;
+}
+}

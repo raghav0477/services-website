@@ -466,7 +466,7 @@ section.book img {
   font-weight: 600;
   line-height: 44px;
   letter-spacing: 0em;
-  text-align: left;
+  /* text-align: left; */
   color: #025b5d;
 }
 .exts {
@@ -680,30 +680,32 @@ footer {
 
 /* RespnsiveNess  */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  /* #main-nav {
-  } */
+  #main-nav {
+  width: 100vw;
+  }
   .navimg {
     display: none;
   }
-  .container{
+  .container {
     width: 90vw;
-      padding: 0;
-      margin: auto;
+    padding: 0;
+    /* margin: auto; */
+    justify-content: center;
   }
-  .navleft{
+  .navleft {
     margin-left: 0%;
   }
-  .navright{
+  .navright {
     display: none;
   }
-  .navaddress{
+  .navaddress {
     font-size: 12px;
     margin-left: 0;
   }
-  .hero{
+  .hero {
     display: block;
   }
-  .hleftimg{
+  .hleftimg {
     display: none;
   }
   .search-box {
@@ -713,19 +715,17 @@ footer {
     left: -233px;
     right: 48px;
   }
-  
+
   .search-input {
-    width: 100%;
+    width: 90VW;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
-    padding: 7px 22px 7px 7px;
     background-color: #eaeaeb;
     color: #6c6c6c;
     border-radius: 3px;
     border: none;
-    transition: all 0.4s;
   }
-  
+
   .search-input:focus {
     border: none;
     outline: none;
@@ -733,140 +733,290 @@ footer {
     -moz-box-shadow: 0 1px 12px #b8c6db;
     -webkit-box-shadow: 0 1px 12px #b8c6db;
   }
-  
+
   .search-btn {
     background-color: transparent;
-    font-size: 18px;
-    padding: 6px 9px;
+    font-size: 15px;
     margin-left: -45px;
     border: none;
     color: #6c6c6c;
-    transition: all 0.4s;
     z-index: 10;
   }
-  .example{
+  .example {
     display: none;
   }
   .search-btn:focus {
     outline: none;
     color: black;
   }
-  .herolefttitle{
-    display: none;
+  .herolefttitle {
+    visibility: hidden;
   }
-  .heroright{
+  .heroright {
     margin: 0 auto;
     justify-content: center;
   }
-  .herorighttitle{
+  .herorighttitle {
     padding: 0.5rem;
+    margin-top: 2rem;
     font-size: 14px;
   }
-  .herorightimgs{
+  .herorightimgs {
     margin: 0;
     padding: 0;
   }
-  .gpimg{
+  .gpimg {
     width: 30px;
     height: 30px;
     margin: 0 2rem;
   }
-  .gpcontent{
+  .gpcontent {
     font-size: 10px;
     line-height: 10px;
   }
-  .banner{
-    width: 85vw;
-    height: 28vh ;
+  .banner {
+    width: 90vw;
+    height: 28vh;
+    margin-left: 0;
   }
-  section.services .card-wrapper{
+  section.services .card-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 2.5rem;
   }
-  .card{
+  .card {
     width: 122px;
     padding: 1rem 0.2rem;
   }
-  .card img{
+  .card img {
     width: 85px;
     top: -1.5em;
   }
-  .card h2{
+  .card h2 {
     font-size: 12px;
     line-height: 10px;
   }
-  .services-heading{
-    font-size: 20px;
+  .hide {
+    display: none !important;
+  }
+  .services-heading {
+    font-size: 18px;
     margin-top: 1.5rem;
     line-height: 20px;
   }
-  .sub-heading{
+  .sub-heading {
     font-size: 10px;
     letter-spacing: 0;
     margin-bottom: 1rem;
   }
-  .same-card{
+  .same-card {
     height: 115px;
     width: 150px;
   }
-  .sameday-img{
+  .sameday-img {
     width: 105px;
     height: 95px;
     top: -2rem;
   }
-  .same-text{
+  .same-text {
     font-size: 12px;
     padding-top: 3rem;
     line-height: 10px;
   }
-  .s{
+  .s {
     width: 115px;
     height: 110px;
     top: -2.5rem;
   }
-  .assure-card{
-    width: 100%;
+  .assure-card {
+    width: 100vw;
     display: -webkit-inline-box;
+    margin-top: 1rem;
   }
-  .assure-title{
+  .assure-title {
     font-size: 18px;
   }
-  .li-1{
+  .li-1 {
     margin: 0 1.2rem;
   }
-  .li-1 li{
+  .li-1 li {
     padding: 0.5rem 0.5rem 0;
   }
-  .listss{
+  .listss {
     font-size: 12px;
   }
-  .assure-card img{
+
+  .assure-card img {
     width: 150px;
     height: 100%;
-    transform: translateX(-52px);
+    transform: translateX(-84px);
     margin-top: 2rem;
   }
-  .pcs-card-wrapper{
+  .pcs-card-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    padding: 0 1rem;
-
+    padding: 0;
+    margin: 0 auto;
   }
-  .pcscard1{
-    width: 150px;
+  .pcscard1 {
+    width: 135px;
     height: 100px;
   }
-  .pcstitle{
+  .pcstitle {
     font-size: 10px;
     margin-top: 0.5rem;
+    line-height: 8px;
   }
   .pcssub {
     margin-top: 3px;
-    font-size: 8px;
+    font-size: 7px;
     color: #757575;
-}
+    line-height: 10px;
+    margin-bottom: 0.8rem;
+  }
+  .apm{
+    margin-top: 0.5rem;
+  }
+  .apmtitle {
+    font-size: 25px;
+  }
+  .apm-content {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .apmc2t {
+    font-size: 13px;
+  }
+  .apmc1 {
+    padding: 0.5rem 1.5rem;
+  }
+  .apmc1 img {
+    width: 50px;
+  }
+  .apmc2p {
+    font-size: 8.5px;
+  }
+  .hm-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  .hm-card {
+    width: 150px;
+    height: 85px;
+  }
+  .hm-text {
+    font-size: 12px;
+    margin-top: 0.5rem;
+    line-height: 12px;
+  }
+  .hm-img {
+    width: 85px;
+    height: 70px;
+    top: -1.5em;
+  }
+  section.book {
+    height: 180px;
+    width: 100vw;
+    align-items: center;
+    margin: 0 auto;
+  }
+  section.book img {
+    width: 150px;
+    height: 80px;
+    margin-left: 2rem;
+  }
+  .book-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1rem;
+    padding: 1rem 0 0;
+    letter-spacing: 0.1rem;
+  }
+  .book-txt {
+    font-size: 10px;
+    padding: 0;
+  }
+  .book-btn {
+    font-size: 8px;
+    padding: 0.3rem;
+    transform: translateX(45%);
+    margin-top: 0.5rem;
+  }
+  .extra-ctn {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .ext-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .ex-img {
+    height: 55px;
+    width: 70px;
+    top: -2rem;
+  }
+  .extra-services {
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+  .ex-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 3rem 2rem 1rem;
+    margin-top: 2rem;
+    margin: 0 auto;
+  }
+  .ex-card {
+    width: 100px;
+    padding: 1rem 0.2rem 0.5rem;
+  }
+  .ex-card p {
+    font-size: 10px;
+    padding: 0.5rem;
+    line-height: 8px;
+  }
+  .wdth {
+    display: none;
+  }
+  .testimonials {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    gap: 2rem;
+  }
+  .testimonial-card {
+    width: 180px;
+    height: 140px;
+    padding: 18px;
+  }
+  .cardtxt {
+    font-size: 8px;
+    line-height: 15px;
+  }
+  .testimonial-card h3 {
+    font-size: 10px;
+  }
+  /* .guarantee{
+    width: 80vw;
+  } */
+  .guarantee h2{
+    font-size: 20px;
+    margin-left: 1.5rem;
+  }
+  .guarantee img{
+    width: 150px;
+  }
+  .ph-caret-circle-left-bold,.ph-caret-circle-right-bold{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
 }
